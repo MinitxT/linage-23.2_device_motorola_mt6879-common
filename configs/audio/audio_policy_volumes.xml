@@ -78,14 +78,14 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_SPEAKER">
         <point>1,-5800</point>
         <point>20,-4000</point>
-        <point>60,-1700</point>
-        <point>100,-400</point>
+        <point>60,-2200</point>
+        <point>100,-1000</point>
     </volume>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EARPIECE">
         <point>1,-5800</point>
         <point>20,-4000</point>
-        <point>60,-1700</point>
-        <point>100,-400</point>
+        <point>60,-2200</point>
+        <point>100,-800</point>
     </volume>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                         ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
@@ -195,13 +195,14 @@ volume index from 0 to 100.
         <point>1,-5800</point>
         <point>20,-4000</point>
         <point>60,-1700</point>
-        <point>100,-400</point>
+        <point>100,-800
+        </point>
     </volume>
     <volume stream="AUDIO_STREAM_ASSISTANT" deviceCategory="DEVICE_CATEGORY_EARPIECE">
         <point>1,-5800</point>
         <point>20,-4000</point>
         <point>60,-1700</point>
-        <point>100,-400</point>
+        <point>100,-800</point>
     </volume>
     <volume stream="AUDIO_STREAM_ASSISTANT" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                             ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
