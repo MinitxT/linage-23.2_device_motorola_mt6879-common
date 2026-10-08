@@ -19,6 +19,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 AB_OTA_POSTINSTALL_CONFIG += \
