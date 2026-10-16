@@ -1,1 +1,4 @@
 get_prop(cameraserver, vendor_persist_camera_prop)
+
+# Torch
+allow cameraserver vendor_torch_sysfs:file rw_file_perms;

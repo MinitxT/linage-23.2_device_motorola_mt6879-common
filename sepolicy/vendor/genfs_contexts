@@ -67,3 +67,6 @@ genfscon sysfs /devices/platform/charger/power_supply/mtk-master-charger u:objec
 # LiveDisplay
 genfscon sysfs /devices/platform/14017000.dsi/hbm u:object_r:vendor_sysfs_livedisplay:s0
 genfscon sysfs /devices/platform/14017000.dsi/dc u:object_r:vendor_sysfs_livedisplay:s0
+
+# Torch
+genfscon sysfs /devices/virtual/flashlight_core/flashlight/flashlight_torch u:object_r:vendor_torch_sysfs:s0
