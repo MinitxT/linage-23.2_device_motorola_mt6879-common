@@ -70,3 +70,4 @@ genfscon sysfs /devices/platform/14017000.dsi/dc u:object_r:vendor_sysfs_livedis
 
 # Torch
 genfscon sysfs /devices/virtual/flashlight_core/flashlight/flashlight_torch u:object_r:vendor_torch_sysfs:s0
+genfscon sysfs /devices/virtual/flashlight_core/flashlight/flashlight_torch_level u:object_r:vendor_torch_sysfs:s0

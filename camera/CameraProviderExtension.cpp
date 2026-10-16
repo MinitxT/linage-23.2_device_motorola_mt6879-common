@@ -11,7 +11,7 @@
 #include <unistd.h>
 
 static const std::string kTorchBrightnessPath =
-    "/sys/devices/virtual/flashlight_core/flashlight/flashlight_torch";
+    "/sys/devices/virtual/flashlight_core/flashlight/flashlight_torch_level";
 
 template <typename T>
 static void writeValue(const std::string& path, const T& value) {
@@ -24,9 +24,9 @@ static int32_t readTorchStrength() {
     if (!file.is_open()) {
         return 0;
     }
-    int32_t type, ct, part, torch_status;
-    file >> type >> ct >> part >> torch_status;
-    return file.fail() ? 0 : torch_status;
+    int32_t type, ct, part, level, max_level;
+    file >> type >> ct >> part >> level >> max_level;
+    return file.fail() ? 0 : level;
 }
 
 static void writeTorchStrength(int32_t torchStrength, bool enabled) {
@@ -43,11 +43,11 @@ bool supportsTorchStrengthControlExt() {
 }
 
 int32_t getTorchDefaultStrengthLevelExt() {
-    return 1;
+    return 3;
 }
 
 int32_t getTorchMaxStrengthLevelExt() {
-    return 3;
+    return 7;
 }
 
 int32_t getTorchStrengthLevelExt() {
